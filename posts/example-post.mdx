@@ -7,6 +7,26 @@ This is an example post, with a [link](https://nextjs.org) and a React component
 
 <TestComponent name="next-mdx-remote" />
 
+# new Try to include js 
+```js
+export default function TestComponent({ name = 'world' }) {
+  return (
+    <>
+      <div>Hello, {name}!</div>
+      <style jsx>{`
+        div {
+          background-color: #111;
+          border-radius: 0.5em;
+          color: #fff;
+          margin-bottom: 1.5em;
+          padding: 0.5em 0.75em;
+        }
+      `}</style>
+    </>
+  )
+}
+```
+
 The title and description are pulled from the MDX file and processed using `gray-matter`. Additionally, links are rendered using a custom component passed to `next-mdx-remote`.
 
 Go back [home](/).
